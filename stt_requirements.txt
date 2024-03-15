@@ -18,7 +18,7 @@ audioread==3.0.0
 backcall==0.2.0
 backports.cached-property==1.0.2
 beautifulsoup4==4.12.0
-black
+black==0.0
 bleach==6.0.0
 cachetools==5.3.0
 certifi==2023.5.7
@@ -220,10 +220,10 @@ tensorboard==2.12.3
 tensorboard-data-server==0.7.0
 tensorboard-plugin-wit==1.8.1
 tensorboardX==2.6
-tensorflow>=2.12.0
+tensorflow==2.12.0
 tensorflow-addons==0.20.0
 tensorflow-estimator==2.12.0
-tensorflow-intel>=2.12.0
+tensorflow-intel==2.12.0
 tensorflow-io-gcs-filesystem==0.31.0
 tensorflow-probability==0.20.1
 termcolor==2.3.0

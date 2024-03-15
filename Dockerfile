@@ -2,7 +2,7 @@
 FROM ubuntu:20.04
 
 # Install python3
-RUN apt-get update && apt-get upgrade -y && apt-get install -y python3 python3-pip python3-dev
+RUN apt-get update && apt-get upgrade -y && apt-get install -y python2 python2-pip python2-dev
 
 # Set the working directory
 WORKDIR /app
