@@ -1,5 +1,5 @@
 # FROM  ubuntu 20 lts
-FROM python:3.8-slim-buster
+FROM python:3.9-slim-buster
 
 # Set the working directory
 WORKDIR /app
@@ -11,7 +11,7 @@ COPY . /app
 RUN pip install --upgrade pip
 
 # Install any needed packages specified in requirements.txt
-RUN pip install -r stt_requirements.txt
+# RUN pip install -r stt_requirements.txt
 
 RUN pip install -r avi_requirements.txt
 
