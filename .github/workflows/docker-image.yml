@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: ["main"]
 
+# Define concurrency group
+concurrency: 
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   generate-dockerfile-list:
     runs-on: ubuntu-latest
