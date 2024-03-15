@@ -1,15 +1,5 @@
 # Use Ubuntu 20.04 LTS as the base image
-FROM ubuntu:20.04
-
-# Avoid prompts during package installation
-ARG DEBIAN_FRONTEND=noninteractive
-
-# Install Python 3.10 and pip
-RUN apt-get update && apt-get install -y software-properties-common && \
-    add-apt-repository ppa:deadsnakes/ppa && \
-    apt-get update && \
-    apt-get install -y python3.10 python3.10-dev python3.10-venv python3-pip && \
-    python3.10 -m pip install --upgrade pip
+FROM python:3.10-slim-buster
 
 # Set the working directory inside the container to /app
 WORKDIR /app
