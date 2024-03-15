@@ -1,5 +1,5 @@
 # FROM  ubuntu 20 lts
-FROM python:3.10-slim-buster
+FROM python:3.9-slim-buster
 
 # Set the working directory
 WORKDIR /app
