@@ -124,7 +124,7 @@ noisereduce==2.0.1
 notebook==6.5.3
 notebook_shim==0.2.2
 numba==0.56.4
-numpy==1.23.5
+numpy#==1.23.5
 oauthlib==3.2.2
 omegaconf==2.3.0
 onnx==1.14.0
