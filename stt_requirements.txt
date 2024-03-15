@@ -178,7 +178,7 @@ python-utils==3.6.0
 pytorch-lightning==1.8.6
 pytorch-metric-learning==1.7.3
 pytz==2022.7.1
-pywin32==306
+# pywin32==306
 pywinpty==2.0.10
 PyYAML==6.0
 pyzmq==25.0.2
