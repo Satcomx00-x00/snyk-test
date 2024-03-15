@@ -11,8 +11,8 @@ WORKDIR /app
 COPY . /app
 
 # Install any needed packages specified in requirements.txt
-RUN pip3 install -r avi_requirements.txt
-RUN pip3 install -r stt_requirements.txt
+RUN pip install -r avi_requirements.txt
+RUN pip install -r stt_requirements.txt
 
 # run main.py when the container launches
-CMD ["python3", "main.py"]
+CMD ["python", "main.py"]
