@@ -13,7 +13,7 @@ RUN pip install --upgrade pip
 # Install any needed packages specified in requirements.txt
 
 RUN pip install --force-reinstall --ignore-requires-python -r avi_requirements.txt
-RUN pip install --force-reinstall --ignore-requires-python -r stt_requirements.txt
+# RUN pip install --force-reinstall --ignore-requires-python -r stt_requirements.txt
 
 # run main.py when the container launches
 CMD ["python", "main.py"]
