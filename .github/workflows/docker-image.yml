@@ -18,15 +18,8 @@ jobs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
     - uses: actions/checkout@v3
-        
-    - name: Print dockerfile_list.json
-      run: cat dockerfile_list.json
-
-    - name: Print matrix output
-      run: echo "Matrix: ${{ steps.set-matrix.outputs.matrix }}"
-
-
-
+    
+    
     - name: Generate list of Dockerfiles
       run: |
         echo "dockerfiles=[" > dockerfile_list.json
@@ -44,8 +37,11 @@ jobs:
       matrix:
         include: ${{fromJson(needs.generate-dockerfile-list.outputs.matrix)}}
     steps:
-    - uses: actions/checkout@v3
-      
+    - uses: actions/checkout@v3 
+    - name: Print dockerfile_list.json
+      run: cat dockerfile_list.json
+
+
     - name: Set project name
       run: echo "PROJECT_NAME=$(echo $GITHUB_REPOSITORY | sed 's|.*/||')" >> $GITHUB_ENV
 
