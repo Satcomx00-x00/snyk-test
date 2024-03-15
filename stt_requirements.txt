@@ -179,7 +179,7 @@ pytorch-lightning==1.8.6
 pytorch-metric-learning==1.7.3
 pytz==2022.7.1
 # pywin32==306
-pywinpty==2.0.10
+# pywinpty==2.0.10
 PyYAML==6.0
 pyzmq==25.0.2
 rapidfuzz==2.13.7
@@ -258,7 +258,7 @@ websockets==7.0
 Werkzeug==2.2.3
 wheel==0.38.4
 whisper==1.1.10
-wincertstore==0.2
+# wincertstore==0.2
 wrapt==1.14.1
 xarray==2023.5.0
 xlrd==2.0.1
