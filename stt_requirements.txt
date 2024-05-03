@@ -239,7 +239,7 @@ torch-pitch-shift==1.2.2
 torchaudio==0.13.0
 torchmetrics==0.11.4
 tornado==6.3.3
-tqdm==4.65.0
+tqdm==4.66.3
 traitlets==5.9.0
 transformers==4.27.3
 typeguard==2.13.3
