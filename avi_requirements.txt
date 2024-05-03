@@ -99,7 +99,7 @@ torch-summary==1.4.5
 torchvision==0.15.1
 torchviz==0.0.2
 tornado==6.2
-tqdm==4.65.0
+tqdm==4.66.3
 traitlets==5.9.0
 typing_extensions==4.5.0
 tzdata==2023.3
